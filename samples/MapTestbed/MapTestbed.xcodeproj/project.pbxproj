@@ -42,6 +42,13 @@
 			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
 			remoteInfo = MapView;
 		};
+		5D0BA7DF1316FBC40056F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE3696D0F673B95003DC21C /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D0BA0831315DE730056F8EA /* MapView.framework */;
+			remoteInfo = "MapView framework";
+		};
 		EBE3697C0F673B95003DC21C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBE3696D0F673B95003DC21C /* MapView.xcodeproj */;
@@ -194,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE3697D0F673B95003DC21C /* libMapView.a */,
+				5D0BA7E01316FBC40056F8EA /* MapView.framework */,
 				2B080D330F9FC12C00E947D5 /* RM Unit Tests.app */,
 			);
 			name = Products;
@@ -227,6 +235,7 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MapTestbed" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -256,6 +265,13 @@
 			fileType = wrapper.application;
 			path = "RM Unit Tests.app";
 			remoteRef = 2B080D320F9FC12C00E947D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5D0BA7E01316FBC40056F8EA /* MapView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapView.framework;
+			remoteRef = 5D0BA7DF1316FBC40056F8EA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		EBE3697D0F673B95003DC21C /* libMapView.a */ = {
@@ -320,6 +336,7 @@
 				INFOPLIST_FILE = Info.plist;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MapTestbed;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -335,6 +352,7 @@
 				INFOPLIST_FILE = Info.plist;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MapTestbed;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -348,7 +366,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
