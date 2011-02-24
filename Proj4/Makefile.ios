@@ -1,0 +1,8 @@
+default:
+	xcodebuild -target "PROJ.4 framework" -configuration ${CONFIGURATION} -sdk iphoneos build
+	xcodebuild -target "PROJ.4 framework" -configuration ${CONFIGURATION} -sdk iphonesimulator build
+	cp -R build/${CONFIGURATION}-iphonesimulator build/${CONFIGURATION}-universal
+	-lipo -create build/${CONFIGURATION}-iphoneos/PROJ.4.framework/PROJ.4 build/${CONFIGURATION}-iphonesimulator/PROJ.4.framework/PROJ.4 -output build/${CONFIGURATION}-universal/PROJ.4.framework/PROJ.4
+
+clean:
+	-rm -rf build
