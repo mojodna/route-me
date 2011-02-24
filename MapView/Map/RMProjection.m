@@ -25,7 +25,7 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 #import "RMGlobalConstants.h"
-#import "proj_api.h"
+#import <PROJ.4/proj_api.h>
 #import "RMProjection.h"
 
 

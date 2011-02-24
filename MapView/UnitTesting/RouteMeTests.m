@@ -7,11 +7,11 @@
 //
 
 #import "RouteMeTests.h"
-#import "RMMapView.h"
-#import "RMCloudMadeMapSource.h"
-#import "RMGeoHash.h"
-#import "RMMarker.h"
-#import "RMMarkerManager.h"
+#import <MapView/RMMapView.h>
+#import <MapView/RMCloudMadeMapSource.h>
+#import <MapView/RMGeoHash.h>
+#import <MapView/RMMarker.h>
+#import <MapView/RMMarkerManager.h>
 
 @implementation RouteMeTests
 #define kAccuracyThreshold .0001
